@@ -1,0 +1,14 @@
+drop table `foods`;
+CREATE TABLE `foods` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `price` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `recommend_times` int(11) DEFAULT NULL,
+  `food_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `image_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `restaurant_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx1_foods_name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=1462 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

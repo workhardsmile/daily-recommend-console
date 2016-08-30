@@ -1,0 +1,6 @@
+truncate table user_restaurant_configs;
+truncate table restaurants;
+truncate table foods;
+truncate table users;
+truncate table search_keys;
+truncate table frequent_sets;

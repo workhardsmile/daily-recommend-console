@@ -1,0 +1,17 @@
+drop table `search_keys`;
+CREATE TABLE `search_keys` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sqls` text COLLATE utf8_unicode_ci,
+  `start_index` int(11) DEFAULT NULL,
+  `end_index` int(11) DEFAULT NULL,
+  `params` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `comment` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx1_search_keys_name` (`name`),
+  KEY `idx1_search_keys_params` (`params`)
+) ENGINE=InnoDB AUTO_INCREMENT=32505 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+

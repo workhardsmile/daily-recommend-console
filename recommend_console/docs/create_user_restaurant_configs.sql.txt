@@ -1,0 +1,11 @@
+drop table `user_restaurant_configs`;
+CREATE TABLE `user_restaurant_configs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `restaurant_id` int(11) DEFAULT NULL,
+  `score` int(11) DEFAULT NULL,
+  `comment` text COLLATE utf8_unicode_ci,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24812 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

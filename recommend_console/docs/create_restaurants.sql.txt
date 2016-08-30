@@ -1,0 +1,22 @@
+drop table `restaurants`;
+CREATE TABLE `restaurants` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `scores` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `score_times` int(11) DEFAULT NULL,
+  `location` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `telephone` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `price` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `level` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `shop_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `image_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `comment` text COLLATE utf8_unicode_ci,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx1_restaurants_name` (`name`),
+  KEY `idx1_restaurants_type` (`type`),
+  KEY `idx1_restaurants_address` (`address`)
+) ENGINE=InnoDB AUTO_INCREMENT=743 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

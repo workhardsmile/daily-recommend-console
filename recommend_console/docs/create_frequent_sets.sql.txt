@@ -1,0 +1,13 @@
+CREATE TABLE `frequent_sets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `surport_level` int(11) DEFAULT NULL,
+  `last_sn` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `date_label` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx1_frequent_sets_name` (`name`),
+  KEY `idx1_frequent_sets_level` (`surport_level`)
+) ENGINE=InnoDB AUTO_INCREMENT=3581 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
